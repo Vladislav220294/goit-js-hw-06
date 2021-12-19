@@ -4,7 +4,7 @@ const nameOutEl = document.querySelector('#name-output');
 nameInputEl.addEventListener('input', onActiveForm);
 
 function onActiveForm(event) {
-  console.log(event.currentTarget);
+  console.log(event.currentTarget.value);
   if (event.currentTarget.value !== '') {
     return (nameOutEl.textContent = event.currentTarget.value);
   }
